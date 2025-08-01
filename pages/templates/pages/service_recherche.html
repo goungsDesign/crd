@@ -1,0 +1,172 @@
+
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block title %}
+Services de recherche
+{% endblock title %}
+{% block content %}
+
+<div class="page-heading header-text">
+     <h1>Services de recherche</h1>
+        <span>Découvrez comment nous pouvons vous aider dans vos projets de recherche.</span>
+</div>
+
+  <div class="callback-form callback-services">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+               <h2>Decouvrez nos service de <em>recherche</em></h2>
+               <span>Nous pourrez nous laissez un message et nos equipes vous contacterons</span>
+            </div>            
+        <div class="accordion" id="articlesAccordion">
+    <!-- debut  article accordeon-->
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headinga1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsea1" aria-expanded="false" aria-controls="collapsea1">
+                <h4>Concevoir des instruments de recherche</h4>       
+              </button>
+             </h4>
+      <div id="collapsea1" class="accordion-collapse collapse" aria-labelledby="headinga1" data-bs-parent="#articlesAccordion">
+        <div class="accordion-body">
+          <p>C4RD travaille en étroite collaboration avec ses clients pour concevoir des outils et instruments de recherche efficaces. Lors du développement d'instruments de recherche, nos équipes suivent un certain nombre de principes : 
+            <ul>
+              <li>Ne jamais réinventer la roue, étudier la littérature.</li>
+              <li>Penser toujours au contexte local.</li>
+              <li>Tester les instruments de recherche tout en ne présumant pas qu'ils ont un sens.</li>
+            </ul>
+            Les instruments de recherche sont traduits dans la (les) langue (s) locale (s), retraduits dans la langue d'origine, pilotés en conditions réelles. Cela garantit que les instruments de recherche sont conformes aux objectifs de recherche et que les questions sont bien comprises et interprétées par la population cible.
+            Pour garantir l'exactitude et la qualité des données, C4RD
+              vérifie un certain nombre de critères de qualité, y compris le flux des questions, la formulation des questions, la précision de la traduction et le degré auquel les instruments de recherche capturent le contexte local.
+            
+          </p>  
+        </div>
+      </div>
+    </div>
+    <!--Fin article accordeon-->
+     <!-- debut  article accordeon-->
+    <div class="accordion-item">
+      <h4 class="accordion-header" id="a2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsea2" aria-expanded="false" aria-controls="collapsea2">
+           <h4>Conception de stratégies de pondération</h4>
+        </button>
+      </h4>
+      <div id="collapsea2" class="accordion-collapse collapse" aria-labelledby="headinga2" data-bs-parent="#articlesAccordion">
+        <div class="accordion-body">
+        <span>L'équipe de C4RD aide les clients à sélectionner la stratégie de pondération la plus appropriée pour leur échantillon. Nos considérations pour la pondération sont les suivantes :</span>
+        <ul>
+          <li>Aider les clients à estimer les totaux de la population (en utilisant des poids reflétant la probabilité inverse de sélection).</li>
+          <li>Ajuster les échantillons afin qu'ils correspondent mieux aux caractéristiques de la population (en utilisant des poids de post-stratification).</li>
+          <li>Corriger le biais d'attrition (s'il existe une source connue d'attrition).</li>
+          <li>Équilibrer le groupe de traitement et le groupe témoin (pondération sur l'inverse du score de propension).</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <!--Fin article accordeon-->
+     <!-- debut  article accordeon-->
+    <div class="accordion-item">
+      <h4 class="accordion-header" id="headinga3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsea3" aria-expanded="false" aria-controls="collapsea3">
+          <h4>Analyse économétrique</h4>
+        </button>
+      </h4>
+      <div id="collapsea3" class="accordion-collapse collapse" aria-labelledby="headinga3" data-bs-parent="#articlesAccordion">
+        <div class="accordion-body">
+         <span>
+         <p>C4RD aide ses clients à comprendre les données à l'aide de techniques d'analyse économétrique et d'outils statistiques. Nos équipes travaillent avec plusieurs principes :</p> 
+        <ul>
+          <li>Structurer l'analyse selon un ensemble clair de priori/hypothèses.</li>
+          <li>Travailler en équipe, car c'est la meilleure façon de générer des idées et des hypothèses supplémentaires.</li>
+          <li>Commencer simple, en se concentrant sur l'analyse univariée et bivariée pour comprendre les variables et les modèles dans les données.</li>
+          <li>Automatiser l'analyse autant que possible pour accélérer la livraison au client.</li>
+          <li>Estimer les coefficients en utilisant plusieurs techniques/modèles pour tester la robustesse des résultats.</li>
+          <li>Réfléchir bien à la façon dont les erreurs standard et les statistiques de test sont estimées.</li>
+          <li>Transmettre graphiquement les résultats.</li>
+        </ul>
+        <p>Nous avons de l'expérience avec de multiples sortes d'ensembles de données
+        y compris les ensembles de données sur les ménages, les ensembles de données enfants, les ensembles de données axés sur l'agriculture, les ensembles de données d'exportation, les bases de données fiscales nationales, etc.</p>
+      
+        </div>
+      </div>
+    </div>
+    <!--Fin article accordeon-->
+     <!-- debut  article accordeon-->
+    <div class="accordion-item">
+      <h4 class="accordion-header" id="headinga4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsea4" aria-expanded="false" aria-controls="collapsea4">
+          <h4>Analyse de réseau et techniques de complexité</h4>
+        </button>
+      </h4>
+      <div id="collapsea4" class="accordion-collapse collapse" aria-labelledby="headinga4" data-bs-parent="#articlesAccordion">
+        <div class="accordion-body">
+        <p>C4RD est constamment à la recherche de partenaires intéressés à appliquer des méthodes d'analyse de réseau ou de complexité aux problèmes de développement. Les types de techniques que nous adaptons régulièrement à notre travail de projet consistent à :</p>
+        <ul>
+          <li>Étudier la relation entre les variables non seulement dans le cadre de l'analyse de régression mais aussi à travers la lentille d'un réseau de variables.</li>
+          <li>Appliquer des mesures de complexité pour calculer les indices socio-économiques, tels que la richesse.</li>
+          <li>Générer des groupes de similarité, pour identifier et visualiser des grappes d'individus ou des grappes.</li>
+          <li>Utiliser des visualisations de réseau pour transmettre des messages/résultats.</li>
+        <!-- Rien à ajouter ici, supprimez simplement ce $SELECTION_PLACEHOLDER$ --> 
+        </ul>
+      </span>
+        </div>
+      </div>
+    </div>
+    <!--Fin article accordeon-->
+
+  </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Demandez un <em>entretient</em></h2>
+              <span>laissez nous un message et nos equipes vous contacterons</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="border-button">Envoyer</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+ 
+{% endblock content %}

@@ -1,0 +1,184 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}
+ Services
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'assets/css/services.css' %}">
+{% endblock styles %}
+{% block content %}
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Nos Services</h1>
+            <span>Nous avons plus de 8 ans d'experiences</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       
+    <div class="single-services">
+
+      <div class="container">
+                 <div class="section-heading">
+<h2>Les principaux services du <em>CRD</em></h2>
+    </div>
+        <div class="row" id="tabs">
+
+          <div class="col-md-4">
+            <ul>
+              <li><a href='#tabs-1'>Expertise <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-2'>Services de données <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-3'>Services de recherche <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-4'>Services de conseils <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-5'>Services d'évaluation  <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <img src="{% static 'assets/images/single_service_01.jpg'%}" alt="">
+                <h4>Expertise</h4>
+                <p>Center for Research and Development (C4RD) a une grande expérience dans la conduite des projets de développement social et politique pour avoir exécuté déjà plus d’une série de projets de recherche à travers l'Afrique. Notre expertise comprend la conception de projets, l’évaluation d’impact des projets/programmes utilisant des expériences randomisées, le suivi des projets, la conception et la mise en œuvre d'enquêtes, l'analyse de données, la collecte de données quantitatives et qualitatives et les études de marché. Ce, grâce à notre équipe d'experts chevronnés, polyvalents dans ces différents domaines.
+                <br><br>Les experts de C4RD connaissent bien les enquêtes auprès des ménages, les enquêtes sur les données de panel, les enquêtes auprès des entreprises, les enquêtes auprès des établissements et des communautés, y compris les focus groupes, les enquêtes téléphoniques et les études de cas, et nous avons un bon bilan de réalisations et de solides compétences pour le traitement des données, le contrôle de la qualité et l'analyse des données.
+                <br><br>
+                C4RD possède un ensemble unique de compétences en matière de création de partenariats et d’entretien des relations de longue date avec les institutions gouvernementales, le secteur privé, les ONG et un certain nombre de partenaires de développement internationaux pour fournir des solutions techniques et opérationnelles aux problèmes de développement auxquels sont confrontés les pays à revenu faible et intermédiaire
+                </p>
+              </article>
+              <article id='tabs-2'>
+                <img src="{% static 'assets/images/single_service_02.jpg'%}" alt="">
+                <h4>Services de données</h4>
+                <p>C4RD fournit des services de collecte de données en utilisant diverses méthodologies et des outils mis à jour. Nous possédons et fournissons des équipes expérimentées, des équipements électroniques et des processus robustes pour assurer la meilleure qualité.</p>
+                  <br>
+                  <h5>Recherche comportementale</h5>
+                  <br>
+                  <p>C4RD aide les chercheurs à mener des recherches/jeux comportementaux ou des expériences connexes sur le terrain, en soutenant ses clients avec des équipes formées, des outils de collecte de données électroniques et des systèmes robustes pour gérer la logistique sur le terrain. C4RD étend continuellement ses capacités dans ce domaine.</p> 
+                  <br>
+                  <h5>Collecte de données qualitatives</h5>
+                 <p>C4RD dispose d'une équipe de modérateurs et de facilitateurs formés qui dirigent des projets de recherche qualitative, notamment la conduite d'entretiens avec des répondants clés, des entretiens semi-structurés et des focus groups dans les langues locales. L’équipe de C4RD est familière à l’usage de Nvivo et ATLAS comme logiciels de gestion et d'analyse de données qualitatives.</p> 
+                <h5>Collecte électronique de données</h5>
+                <p>C4RD utilise des tablettes Android pour la collecte de données. Nous avons une équipe polyvalente et spécialisée pour les scripts ; codage d'enquêtes en plateformes/tablettes électroniques fonctionnant avec diverses plateformes comme SurveyCTO, ODK, KoBoToolbox; Akvo Flow, Survey Solutions, Survey2Go, Tangerine, etc. Ils permettent la programmation d'enquêtes très flexibles, avec des modèles de saut compliqués si nécessaire, multimédias et d'excellentes fonctions d'audit.
+                  <br><br>
+                  La collecte des données quantitatives est effectuée à l'aide des outils de collecte de données électroniques de pointe (tablettes/smartphones). Outre la formation de l'équipe de données au pilotage des instruments de recherche, la préparation de la logistique d'enquête, la programmation des tablettes, la supervision sur le terrain, les contrôles de la qualité des données, la mise en œuvre des normes éthiques, la bonne comptabilité, la couverture d'assurance et le respect des exigences légales nationales, C4RD met beaucoup l'accent sur la garantie de processus de collecte de données robustes.
+C4RD a mené des enquêtes à grande échelle dans plusieurs secteurs, notamment les secteurs de l'agriculture, l'éducation, la santé, le genre, le travail, la protection sociale, les finances, la pauvreté (revenus/consommation), les mines et télécommunications. Ces enquêtes comprenaient des études de prévalence, des évaluations de programmes, des jeux de comportement et des études de marché.
+
+                </p>
+                <br>
+                <a href="{% url 'pages:service_data' %}" class="btn btn-primary">En savoir plus</a>
+
+              </article>
+              <article id='tabs-3'>
+                <img src="{% static 'assets/images/single_service_03.jpg' %}" alt="">
+                <h4>Services de recherche</h4>
+                <p>Tirant parti de son expertise technique interne, C4RD accompagne ses clients tout au long du cycle de vie des projets de recherche, de la conception à la collecte et l'analyse des données. 
+                <br><br>Les projets de recherche typiques comprennent : les évaluations de programmes, les enquêtes auprès des ménages, l'analyse de la pauvreté, les études de prévalence et les études sur la perception, les connaissances, les attitudes, les comportements et les pratiques (KABP), la sensibilité aux prix, etc.
+                </p>
+                <br><br>
+                <h5>Concevoir des instruments de recherche</h5>
+                <p>
+                  C4RD travaille en étroite collaboration avec ses clients pour concevoir des outils et instruments de recherche efficaces. Lors du développement d'instruments de recherche, nos équipes suivent un certain nombre de principes :
+                  <br>
+                  (i)	Ne jamais réinventer la roue, étudier la littérature ;<br>
+                (ii)	Penser toujours au contexte local ; <br>
+                (iii)	Tester les instruments de recherche tout en ne présumant pas qu'ils ont un sens.
+                <br>
+                Les instruments de recherche sont traduits dans la (les) langue (s) locale (s), retraduits dans la langue d'origine, pilotés en conditions réelles. Cela garantit que les instruments de recherche sont conformes aux objectifs de recherche et que les questions sont bien comprises et interprétées par la population cible.
+Pour garantir l'exactitude et la qualité des données, C4RD vérifie un certain nombre de critères de qualité, y compris le flux des questions, la formulation des questions, la précision de la traduction et le degré auquel les instruments de recherche capturent le contexte local.
+
+                </p>
+               <a href="{% url 'pages:service_research' %}" class="btn btn-primary">En savoir plus</a>
+             
+              </article>
+              <article id='tabs-4'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Service de conseils</h4>
+                <p>C4RD fournit des conseils techniques à ses clients sur la conception et la mise en œuvre de projets de recherche, d'interventions de développement et de politiques socio-économiques.
+ 
+                <br><br>Notre approche est structurée, gourmande en données et ancrée dans le contexte politique et institutionnel local. Elle s’articule comme suit :
+              <br><br>
+            <ul>
+              <li><i class="fa fa-counsel"></i>Conseils sur les méthodes de recherche et conception de l'évaluation ;</li>
+              <li><i class="fa fa-counsel"></i>Conception de politiques et de projets fondée sur des preuves ;</li>
+              <li><i class="fa fa-counsel"></i>Amélioration du ciblage des interventions et des politiques ;</li>
+              <li><i class="fa fa-counsel"></i>Estimation et compréhension de la portée potentielle ;</li>
+              <li><i class="fa fa-counsel"></i>Renforcement des capacités sur les méthodes de recherche et d'évaluation ;</li>
+              <li><i class="fa fa-counsel"></i>Service de conseil intégré.</li>
+            </ul>
+            </p>
+              </article>
+              <article id='tabs-5'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Services d'évaluation d'impact et de monitorage par des tiers</h4>
+                <p>C4RD procède à l'évaluation d'impact des projets en utilisant plusieurs méthodologies telles que l'essai randomisé de contrôle (RCT), la différence dans les différences (DD), l'appariement des scores de propension (PSM), la conception de régression (RDD), etc. En plus des services d'évaluation d'impact, C4RD fournit aussi des services de monitorage par les tiers.</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callback-form callback-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Demandez un <em>entretient</em></h2>
+              <span style="text-align: center;">laissez nous un message et nos equipes vous contacterons</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Nom complet" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="Address E-Mail" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Sujet" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Votre Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="border-button">Envoyer</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+              <div class="partner-item">
+                <img src="assets/images/client-01.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{%endblock%}

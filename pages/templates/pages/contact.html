@@ -1,0 +1,132 @@
+{% extends 'pages/base.html' %}
+
+{% load static %}
+
+{% block title %}
+ contact
+{% endblock title %}
+
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'assets/css/contact.css' %}">
+{% endblock styles %}
+{% block content %}
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Nous contacter</h1>
+            <span>sentez vous libre de nous laisser un message maintenant !</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-information">
+      <div class="container">
+        <div class="section-heading">
+              <h2>Comment contacter le <em>CRD</em></h2>
+            </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="contact-item">
+              <i class="fa fa-whatsapp"></i>
+              <h4>Telephone</h4>
+              <p>Veuillez noter l'indicatif du numero fournit. <br><br></p>
+              <a href="{% url 'pages:home' %}"> (+229) 96 03 26 70 </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-item">
+              <i class="fa fa-envelope"></i>
+              <h4>Email</h4>
+              <p>Vous pouvez nous ecrire aussi par email a l'adresse ci-dessous</p>
+              <a href="{% url 'pages:contact' %}">info@ce4rd.com </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-item">
+              <i class="fa fa-map-marker"></i>
+              <h4>Localisation</h4>
+              <p>lot : 3575 Ahossougbéta,<br>Abomey-Calavi-Rép du Bénin
+              </p>
+              <a href="#">View on Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callback-form contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Evoyez nous un <em>message</em></h2>
+              <span style="text-align: center;">Une equipe se tient a votre disposition pour repondre a vos attente</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form id="contact" action="" method="get">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Nom complet" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="Address E-Mail" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Sujet" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Votre Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button">Envoyer un Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="map">
+<!-- How to change your own map point
+	1. Go to Google Maps
+	2. Click on your location point
+	3. Click "Share" and choose "Embed map" tab
+	4. Copy only URL and paste it within the src="" field below
+-->
+      <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="partners contact-partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+              <div class="partner-item">
+                <img src="assets/images/client-01.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{%endblock%}

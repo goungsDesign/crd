@@ -1,0 +1,198 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}
+A propos
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'assets/css/about.css' %}">
+{% endblock styles %}
+    
+{% block content %}
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>A propos de nous</h1>
+            <span>Nous avons plus de 20 ans d'experiences</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-info about-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <span>Nous avons des competences dans la recherche pour le develoippement</span>
+                    <h2>En savoir plus sur notre<em> societe</em></h2>
+                    <p>Center for Research and Development (C4RD) a une grande expérience dans la conduite des projets de développement social et politique pour avoir exécuté déjà plus d’une série de projets de recherche à travers l'Afrique. Notre expertise comprend la conception de projets, l’évaluation d’impact des projets/programmes utilisant des expériences randomisées, le suivi des projets, la conception et la mise en œuvre d'enquêtes, l'analyse de données, la collecte de données quantitatives et qualitatives et les études de marché. Ce, grâce à notre équipe d'experts chevronnés, polyvalents dans ces différents domaines.
+                      <br><br>
+                      Les experts de C4RD connaissent bien les enquêtes auprès des ménages, les enquêtes sur les données de panel, les enquêtes auprès des entreprises, les enquêtes auprès des établissements et des communautés, y compris les focus groupes, les enquêtes téléphoniques et les études de cas, et nous avons un bon bilan de réalisations et de solides compétences pour le traitement des données, le contrôle de la qualité et l'analyse des données.
+                      <br><br>
+                      C4RD possède un ensemble unique de compétences en matière de création de partenariats et d’entretien des relations de longue date avec les institutions gouvernementales, le secteur privé, les ONG et un certain nombre de partenaires de développement internationaux pour fournir des solutions techniques et opérationnelles aux problèmes de développement auxquels sont confrontés les pays à revenu faible et intermédiaire.
+                    </p>
+                    <a href="{% url 'pages:services'%}" class="filled-button">En savoir plus</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="left-image">
+                    <img src="{% static 'assets/images/crd_teatching.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2><em>Les membres</em> de notre equipe </h2>
+              <span style="text-align: center;">Nous comptons plusieurs experts dans divers domaines de la recherche et du developpement</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/team_01.jpg" alt="">
+              <div class="down-content">
+                <h4>Bocco Jonas</h4>
+                <span>Co-Founder</span>
+                <p>In sem sem, dapibus non lacus auctor, ornare sollicitudin lacus. Aliquam ipsum urna, semper quis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/team_02.jpg" alt="">
+              <div class="down-content">
+                <h4>Mary Houston</h4>
+                <span>Chief Marketing Officer</span>
+                <p>In sem sem, dapibus non lacus auctor, ornare sollicitudin lacus. Aliquam ipsum urna, semper quis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/team_03.jpg" alt="">
+              <div class="down-content">
+                <h4>Paul Walker</h4>
+                <span>Financial Analyst</span>
+                <p>In sem sem, dapibus non lacus auctor, ornare sollicitudin lacus. Aliquam ipsum urna, semper quis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-content">
+              <span>Lorem ipsum dolor sit amet</span>
+              <h2>Nos solutions pour le <em>developpement economique</em></h2>
+              <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue. 
+              <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit molestie nunc, ut posuere ante tortor ut neque.</p>
+              <a href="" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">945</div>
+                  <div class="count-title">temps de travail</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">34</div>
+                  <div class="count-title">Grandes audit</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">578</div>
+                  <div class="count-title">Projets realises</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">26</div>
+                  <div class="count-title">trophees</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Ce qu'ils disent <em>a popos de nous</em></h2>
+              <span style="text-align: center;">Les temoignages de nos plus grands clients</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-testimonials owl-carousel">
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Boni Yayi</h4>
+                  <span>Chief Financial Analyst</span>
+                  <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Patrice Talon</h4>
+                  <span>Market Specialist</span>
+                  <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Etat Centrafricain</h4>
+                  <span>Chief Accountant</span>
+                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Burkina Faso</h4>
+                  <span>Marketing Head</span>
+                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock%}

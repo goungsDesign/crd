@@ -1,0 +1,313 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}
+ CRD-Accueil
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'assets/css/home.css' %}">
+{% endblock styles %}
+{% block content %}
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Expertise</h6>
+                  <h4>Conception de projets</h4>
+                  <div style="border-radius: 20px;background-color:rgb(86, 83, 83); width:65%; padding-left:15px;">
+                      <p style="color: rgb(209, 240, 178);">Center for Research and Development (C4RD) a une grande expérience dans la conduite des projets de développement social et politique pour avoir exécuté déjà plus d’une série de projets de recherche à travers l'Afrique. 
+                   </p>
+                  </div>
+                  
+                  <a href="{% url 'pages:services'%}" class="filled-button">En savoir plus</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Services de données</h6>
+                  <h4>Diverses méthodologies et des outils mis à jour</h4>
+                  <div style="border-radius: 20px;background-color:rgb(86, 83, 83); width:65%; padding-left:15px;">
+                      <p style="color: rgb(209, 240, 178); ">C4RD fournit des services de collecte de données en utilisant diverses méthodologies et des outils mis à jour. Nous possédons et fournissons des équipes expérimentées, des équipements électroniques et des processus robustes pour assurer la meilleure qualité.</p>
+                  </div>
+                  
+                  <a href="{% url 'pages:services'%}" class="filled-button">Nos services</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-3">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Services de recherche</h6>
+                 
+                  <h4>C4RD accompagne ses clients dans leurs projets de recherche</h4>
+                   <div style="border-radius: 20px;background-color:rgb(86, 83, 83); width:65%; padding-left:15px;">
+                    <p style="color: rgb(209, 240, 178); ">Tirant parti de son expertise technique interne, C4RD accompagne ses clients tout au long du cycle de vie des projets de recherche, de la conception à la collecte et l'analyse des données. </p>
+                  </div>
+                  
+
+                  <a href="{% url 'pages:services'%}" class="filled-button">En savoir plus</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+           <!-- Item -->
+          <div class="item item-4">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Services de conseils</h6>
+                  <h4>Conseils techniques en conception et mise en œuvre de projets</h4>
+                  <div style="border-radius: 20px;background-color:rgb(86, 83, 83); width:65%; padding-left:15px;">
+                    <p style="color: rgb(209, 240, 178); ">C4RD fournit des conseils techniques à ses clients sur la conception et la mise en œuvre de projets de recherche, d'interventions de développement et de politiques socio-économiques.</p>
+                  </div>
+                 
+                  <a href="{% url 'pages:services'%}" class="filled-button">En savoir plus</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+              <!-- Item -->
+          <div class="item item-5">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Evaluation et Monitorage</h6>
+                  <h4>Evaluation d'impact des projets</h4>
+                  <div style="border-radius: 20px;background-color:rgb(86, 83, 83); width:65%; padding-left:15px;">
+                    <p style="color: rgb(209, 240, 178); ">C4RD procède à l'évaluation d'impact des projets en utilisant plusieurs méthodologies telles que l'essai randomisé de contrôle (RCT), la différence dans les différences (DD), l'appariement des scores de propension (PSM), la conception de régression (RDD), etc. En plus des services d'évaluation d'impact, C4RD fournit aussi des services de monitorage par les tiers.</p>
+                  </div>
+                  
+                  <a href="{% url 'pages:services'%}" class="filled-button">En savoir plus</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Besoin de nous joindre ?</h4>
+            <span>Prenez juste un petit moment pour nous laisser vos coordonnees et un petit message.</span>
+          </div>
+          <div class="col-md-4">
+            <a href="{% url 'pages:contact'%}" class="border-button">Nous contacter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Developpement <em>Sociale et Politique</em></h2>
+              <span style="text-align: center;">Comment nos equipes a pied d'oeuvres travaillent</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/service_01.jpg" alt="">
+              <div class="down-content">
+                <h4>Enquetes</h4>
+                <p>Les experts de C4RD connaissent bien les enquêtes auprès des ménages, les enquêtes sur les données de panel, les enquêtes auprès des entreprises, les enquêtes auprès des établissements et des communautés, y compris les focus groupes, les enquêtes téléphoniques et les études de cas, et nous avons un bon bilan de réalisations et de solides compétences pour le traitement des données, le contrôle de la qualité et l'analyse des données.</p>
+                <a href="" class="filled-button">Lire plus</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/service_02.jpg" alt="">
+              <div class="down-content">
+                <h4>Solutions operationnelles</h4>
+                <p>C4RD possède un ensemble unique de compétences en matière de création de partenariats et d’entretien des relations de longue date avec les institutions gouvernementales, le secteur privé, les ONG et un certain nombre de partenaires de développement internationaux pour fournir des solutions techniques et opérationnelles aux problèmes de développement auxquels sont confrontés les pays à revenu faible et intermédiaire.</p>
+                <a href="" class="filled-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/service_03.jpg" alt="">
+              <div class="down-content">
+                <h4>Collecte de données</h4>
+                <p>C4RD utilise des tablettes Android pour la collecte de données. Nous avons une équipe polyvalente et spécialisée pour les scripts ; codage d'enquêtes en plateformes/tablettes électroniques fonctionnant avec diverses plateformes comme SurveyCTO, ODK, KoBoToolbox; Akvo Flow, Survey Solutions, Survey2Go,Tangerine, etc. Ils permettent la programmation d'enquêtes très flexibles, avec des modèles de saut compliqués si nécessaire.</p>
+                <a href="" class="filled-button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="left-image">
+                    <img src="{% static 'assets/images/service_02.png'%}" alt="service">
+                  </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <span>Qui nous sommes</span>
+                    <h2>Decouvrire <em>notre cabinet</em></h2>
+                    <p>Center for Research and Development (C4RD) a une grande expérience dans la conduite des projets de développement social et politique pour avoir exécuté déjà plus d’une série de projets de recherche à travers l'Afrique. <br>
+                    Les experts de C4RD connaissent bien les enquêtes auprès des ménages, les enquêtes sur les données de panel, les enquêtes auprès des entreprises, les enquêtes auprès des établissements et des communautés, y compris les focus groupes, les enquêtes téléphoniques et les études de cas, et nous avons un bon bilan de réalisations et de solides compétences pour le traitement des données, le contrôle de la qualité et l'analyse des données.
+                    </p>
+                    <a href="{% url 'pages:about' %}" class="filled-button">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Ce qu'ils disent <em>a propos de nous</em></h2>
+              <span style="text-align: center;">Quelques temoignages de nos plus grands clients a propos de leurs interactions avec nous. <br> Vous etes peut-etre le prochain !</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-testimonials owl-carousel">
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>George Walker</h4>
+                  <span>Chief Financial Analyst</span>
+                  <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>John Smith</h4>
+                  <span>Market Specialist</span>
+                  <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>David Wood</h4>
+                  <span>Chief Accountant</span>
+                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Andrew Boom</h4>
+                  <span>Marketing Head</span>
+                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callback-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Contact pour un <em>entretient</em></h2>
+              <span style="text-align: center;">Laissez nous un petit message et notre equipe vous contactera</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Nom complet" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="Address E-Mail" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Sujet" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Votre Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="border-button">Envoyer</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+            
+              <div class="partner-item">
+                <img src="{% static 'assets/images/client-01.png' %}" title="1" alt="1">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/client-01.png' %}" title="2" alt="2">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/client-01.png'%}" title="3" alt="3">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/client-01.png'%}" title="4" alt="4">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/client-01.png'%}" title="5" alt="5">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
