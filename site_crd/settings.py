@@ -13,9 +13,13 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 from environ import Env
-env=Env()
+
+
+env = Env()
+
 Env.read_env()
-ENVIRONMENT=env('ENVIRONMENT',default="production")
+
+ENVIRONMENT = env('ENVIRONMENT',default="production")
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,12 +32,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
 
-if ENVIRONMENT=='developement':
-    DEBUG=True
+if ENVIRONMENT == 'development':
+    DEBUG = True
 else:
     DEBUG=False
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','*']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','site-crd.onrender.com']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://site-crd.onrender.com',
+]
 
 
 # Application definition
