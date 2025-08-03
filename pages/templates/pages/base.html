@@ -19,16 +19,16 @@
     
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'pages/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/templatemo-finance-business.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/assets/css/templatemo-finance-business.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/assets/css/owl.css' %}">
 
-    <link rel="stylesheet" href="{% static 'assets/css/accordions.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/assets/css/accordions.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/assets/css/slick-theme.css' %}">
   </head>
  <body>
   
@@ -97,11 +97,6 @@
                       active
                     {% endif %}">
                 <a class="nav-link" href="{% url 'pages:services' %}">Services
-                  <span class="sr-only">
-                 
-                      (current)
-                
-                  </span>
                 </a>
               </li>
               </li>                          
@@ -207,14 +202,14 @@
 {% block scripts %}
   
     <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'pages/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'pages/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
     <!-- Additional Scripts -->
-    <script src="{% static 'assets/js/custom.js' %}"></script>
-    <script src="{% static 'assets/js/owl.js' %}"></script>
-    <script src="{% static 'assets/js/slick.js' %}"></script>
-    <script src="{% static 'assets/js/accordions.js' %}"></script>
+    <script src="{% static 'pages/assets/js/custom.js' %}"></script>
+    <script src="{% static 'pages/assets/js/owl.js' %}"></script>
+    <script src="{% static 'pages/assets/js/slick.js' %}"></script>
+    <script src="{% static 'pages/assets/js/accordions.js' %}"></script>
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] =cleared[3]= cleared[4]=0; //set a cleared flag for each field
